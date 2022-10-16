@@ -1,0 +1,82 @@
+* {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+body {
+  background-color: #0d1017;
+}
+
+.github-card {
+  width: 550px;
+  height: auto;
+  background-color: #0d1017;
+  border: 1px solid #31363c;
+  border-radius: 10px;
+  color: white;
+  font-family: Arial;
+  display: grid;
+  grid-template-columns: 0.35fr 1fr;
+  position: relative;
+}
+.github-card .github-card-img {
+  width: 150px;
+  height: 150px;
+  margin: 10px 10px;
+  border-radius: 10px;
+}
+.github-card .github-card-data {
+  padding: 20px 10px;
+}
+.github-card .github-card-data-name {
+  font-weight: bold;
+  font-size: 40px;
+  color: #c9d2d9;
+}
+.github-card .github-card-data-user {
+  color: #4078c0;
+}
+.github-card .github-card-data-user:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.github-card .github-card-follow-btn {
+  width: 98%;
+  text-align: center;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #21262c;
+  color: white;
+  border: 1px solid #363b41;
+  transition: 200ms;
+}
+.github-card .github-card-follow-btn:hover {
+  background-color: #2b323a;
+  border: 1px solid #586069;
+}
+.github-card .github-card-data-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.github-card .github-card-data-row .github-card-data-text {
+  color: #8894a0;
+  margin-right: 10px;
+}
+.github-card .github-card-data-row .github-card-data-text .github-card-data-data {
+  color: #bdd4e5;
+  font-weight: bold;
+}
+.github-card .github-card-data-bio {
+  width: 300px;
+  height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  margin-top: 10px;
+  color: #c9d2d9;
+  display: none;
+}
