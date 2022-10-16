@@ -18,7 +18,20 @@ body {
   font-family: Arial;
   display: grid;
   grid-template-columns: 0.75fr 1fr;
+  position: relative;
   overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+.github-card .github-logo {
+  position: absolute;
+  top: 9%;
+  left: 98%;
+  color: #c9d2d9;
+  transform: translate(-100%, -100%);
 }
 .github-card .github-card-img {
   width: 250px;
