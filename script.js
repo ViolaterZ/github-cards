@@ -13,12 +13,12 @@ const stylesheet = document.createElement('link')
 // Stylesheet injector
 if (card.getAttribute('data-style') === 'simple') {
     stylesheet.rel = 'stylesheet'
-    stylesheet.href = 'https://cdn.jsdelivr.net/gh/ViolaterZ/github-cards@latest/style-simple.css';
+    stylesheet.href = 'https://cdn.jsdelivr.net/gh/ViolaterZ/github-cards/style-simple.css';
     document.head.insertAdjacentElement('beforeend', stylesheet)
 }
 if (card.getAttribute('data-style') === 'default' || card.getAttribute('data-style') === null) {
     stylesheet.rel = 'stylesheet'
-    stylesheet.href = 'https://cdn.jsdelivr.net/gh/ViolaterZ/github-cards@latest/style.css';
+    stylesheet.href = 'https://cdn.jsdelivr.net/gh/ViolaterZ/github-cards/style.css';
     document.head.append(stylesheet)
 }
 // #################################### //
