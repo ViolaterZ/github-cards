@@ -16,7 +16,7 @@ if (card.getAttribute('data-style') === 'simple') {
     stylesheet.href = 'https://cdn.jsdelivr.net/gh/ViolaterZ/github-cards/style-simple.css';
     document.head.insertAdjacentElement('beforeend', stylesheet)
 }
-if (card.getAttribute('data-style') === 'default' || card.getAttribute('data-style') === null) {
+if (card.getAttribute('data-style') === 'default') {
     stylesheet.rel = 'stylesheet'
     stylesheet.href = 'https://cdn.jsdelivr.net/gh/ViolaterZ/github-cards/style.css';
     document.head.append(stylesheet)
@@ -31,9 +31,8 @@ if (card.getAttribute('data-style') === 'default' || card.getAttribute('data-sty
     card.insertAdjacentHTML('beforeend', `
     <img src="${data.avatar_url}" alt="" class="github-card-img">
     <div class="github-card-data">
-        <i class="fa-brands fa-github github-logo"></i>
         <p class="github-card-data-name">${data.name}</p>
-        <p class="github-card-data-user">@${data.login}</p>
+        <p class="github-card-data-user">@${data.login} <i class="fa-brands fa-github github-logo"></i></p>
         <div class="github-card-data-row">
             <p class="github-card-data-text"><span class="github-card-data-followers github-card-data-data">${formatter.format(data.followers)}</span> Followers</p>
             <p class="github-card-data-text"><span class="github-card-data-repos github-card-data-data">${formatter.format(data.public_repos)}</span> Repos</p>

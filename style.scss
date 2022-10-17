@@ -3,10 +3,6 @@
     padding: 0 0;
 }
 
-body {
-    background-color: #0d1017;
-}
-
 .github-card {
     width: 600px;
     height: 250px;
@@ -26,16 +22,6 @@ body {
     overflow: hidden;
     user-select: none;
     -webkit-user-drag: none;
-    
-    .github-logo {
-        position: absolute;
-        top: 9%;
-        left: 98%;
-
-        color: #c9d2d9;
-
-        transform: translate(-100%, -100%);
-    }
 
     .github-card-img {
         width: 250px;
