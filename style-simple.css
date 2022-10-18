@@ -37,6 +37,9 @@
 }
 .github-card .github-card-data-user {
   color: #4078c0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .github-card .github-card-data-user:hover {
   cursor: pointer;
